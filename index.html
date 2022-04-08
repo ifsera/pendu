@@ -2,9 +2,9 @@
 <html lang=”en”>
 <head>
 <title>Pendu policy</title>
-	<link rel="icon" type="image/webp" href="logo_wb.webp" />
 <meta name="description" content="Pendu policy">
 <meta name="keywords" content="html tutorial template">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <style type="text/css">
 body {
   margin: auto;
@@ -25,37 +25,175 @@ body {
 
 }
 
+/* carousel styles*/
+@-webkit-keyframes scroll {
+0% {
+-webkit-transform: translateX(0);
+transform: translateX(0);
+}
+100% {
+-webkit-transform: translateX(calc(-250px * 7));
+transform: translateX(calc(-250px * 7));
+}
+}
+@keyframes scroll {
+0% {
+-webkit-transform: translateX(0);
+transform: translateX(0);
+}
+100% {
+-webkit-transform: translateX(calc(-250px * 7));
+transform: translateX(calc(-250px * 7));
+}
+}
+.slider {
+background: pr;
+box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+height: 660px;
+margin: auto;
+overflow: hidden;
+position: relative;
+width: 650px;
+}
+.slider::before, .slider::after {
+background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+content: "";
+height: 660px;
+position: absolute;
+width: 200px;
+z-index: 2;
+}
+.slider::after {
+right: 0;
+top: 0;
+-webkit-transform: rotateZ(180deg);
+transform: rotateZ(180deg);
+}
+.slider::before {
+left: 0;
+top: 0;
+}
+.slider .slide-track {
+-webkit-animation: scroll 40s linear infinite;
+animation: scroll 40s linear infinite;
+display: flex;
+width: calc(250px * 14);
+}
+.slider .slide {
+height: auto;
+width: 365px;
+}
+div {
+	width: 100%;
+	text-align:center;
+}
+h1
+{
+    font-style: italic;
+    font-weight: bold;
+}
 </style>
     <script type="text/javascript" 
     src="3.4.1_jquery.min.js"></script> 
 
 </head>
 <body>
-	<div class="center" style="text-align="center";">      <img src="logo_wb.webp" width="128px" style="margin-right:30px;" />
-	
+<div class="center" style="text-align="center";">     
+	<img src="logo_wb.webp" width="128px" style="margin-bottom:10px;" />
+	</div>
 	<div class="center" >
 	  <div lang="en" class="wrapper">
-		<h1>Hanger</h1>
-		<p>Pendu application don't collect any information.</p>
+			<h1><b>Hanger</b></h1>
+			<p>Pendu application don't collect any information.</p>
+		</div>
+		<div lang="fr" class="wrapper">
+			<h1>Pendu</h1>
+			<p>L'application Pendu ne collecte aucune information personnelle.  
+			L'application ne collecte pas ni ne partage de données.
+			</p>
+		<div/>
+
+			<div lang="es" class="wrapper" >
+				<h2>Colgado</h2>
+				<p>La aplicación Pendu no recopila ninguna información personal.
+		La aplicación no recopila ni comparte datos.</p>
+			</div>
 	</div>
-	<div lang="fr" class="wrapper">
-		<h1 style="text-align:"center";>Pendu</h1>
-		<p>L'application Pendu ne collecte aucune information personnelle.  
-L'application ne collecte pas ni ne partage de données.</div>
-	<div lang="es" class="wrapper" >
-		<h1>Colgado</h1>
-		<p>La aplicación Pendu no recopila ninguna información personal.
-La aplicación no recopila ni comparte datos.</p>
-	</div>
-</div></div>
+	
+	<br/>
+	<br/>
+	<br/>
 
+<div lang="fr" class="wrapper" >
+<div class="slider" style="margin-left:-10px;">
+<div class="slide-track">
+<div class="slide">
+<img src="fr_1.jpg"  alt="" />
+</div>
+<div class="slide">
+<img src="fr_2.jpg"  alt="" />
+</div>
+<div class="slide">
+<img src="fr_3.jpg"  alt="" />
+</div>
+<div class="slide">
+<img src="fr_4.jpg"  alt="" />
+</div>
+<div class="slide">
+<img src="fr_5.jpg"  alt="" />
+</div>
+</div>
+</div>
+</div>
+<!-- partial -->
+</div>
+<div lang="en" class="wrapper" >
+<div class="slider" style="margin-left:-10px;">
+<div class="slide-track">
+<div class="slide">
+<img src="en_1.jpg"  alt="" />
+</div>
+<div class="slide">
+<img src="en_2.jpg"  alt="" />
+</div>
+<div class="slide">
+<img src="en_3.jpg"  alt="" />
+</div>
+<div class="slide">
+<img src="en_4.jpg"  alt="" />
+</div>
+<div class="slide">
+<img src="en_5.jpg"  alt="" />
+</div>
+</div>
+</div>
+</div>
+<!-- partial -->
+</div>
 
-
-
-
-
-
-
+<div lang="es" class="wrapper" >
+<div class="slider" style="margin-left:-10px;">
+<div class="slide-track">
+<div class="slide">
+<img src="sp_1.jpg"  alt="" />
+</div>
+<div class="slide">
+<img src="sp_2.jpg"  alt="" />
+</div>
+<div class="slide">
+<img src="sp_3.jpg"  alt="" />
+</div>
+<div class="slide">
+<img src="sp_4.jpg"  alt="" />
+</div>
+<div class="slide">
+<img src="sp_5.jpg"  alt="" />
+</div>
+</div>
+</div>
+</div>
+<!-- partial -->
+</div>
 
 
 	<script type="text/javascript">
