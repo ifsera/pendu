@@ -5,6 +5,7 @@
 <meta name="description" content="Pendu policy">
 <meta name="keywords" content="html tutorial template">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="icon" type="image/webp" href="img/logo_wb.webp" />
 <style type="text/css">
 body {
   margin: auto;
@@ -15,7 +16,20 @@ body {
 }
 
 /* Centered Image Code */
+footer {
+        position: relative;
+        width: 100%;
+}
 
+p.copyright {
+        position: absolute;
+        width: 100%;
+       /** color: #fff;*/
+        line-height: 40px;
+        font-size: 0.7em;
+        text-align: center;
+        bottom:0;
+}
 .center {
   height: px;
   display: flex;
@@ -106,18 +120,22 @@ h1
 	<div class="center" >
 	  <div lang="en" class="wrapper">
 			<h1><b>Hanged</b></h1>
-			<p>Pendu application don't collect any information.</p>
+				<p style = "text-decoration: underline;text-align:left;">Privacy Policy<p>
+			<p style="text-align:justify;">Pendu application don't collect any information.</p>
 		</div>
 		<div lang="fr" class="wrapper">
 			<h1>Pendu</h1>
-			<p>L'application Pendu ne collecte aucune information personnelle.  
+			<br/>
+				<p style = "text-decoration: underline;text-align:left;">Règles de confidentialité<p>
+			<p style="text-align:justify;">L'application Pendu ne collecte aucune information personnelle.  
 			L'application ne collecte pas ni ne partage de données.
 			</p>
 		<div/>
 
 			<div lang="es" class="wrapper" >
 				<h2>Colgado</h2>
-				<p>La aplicación Pendu no recopila ninguna información personal.
+					<p style = "text-decoration: underline;text-align:left;">Política de privacidad<p>
+			<p style="text-align:justify;">La aplicación Pendu no recopila ninguna información personal.
 		La aplicación no recopila ni comparte datos.</p>
 			</div>
 	</div>
@@ -223,7 +241,10 @@ $('div.wrapper[lang!=' + lang + ']').hide();
 </script>
 
 
-
+<!--2021-->
+<footer style="padding-top:70px;">
+    <p class="copyright"> © Copyright 2022 Company SEAR. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
